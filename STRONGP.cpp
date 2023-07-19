@@ -6,6 +6,8 @@ bool upper=false, lower=false, digit=false, others=false;
 int main() {
     ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
+	freopen("strongp.INP", "r", stdin);
+	freopen("strongp.OUT", "w", stdout);
     cin >> n >> s;
     for (long long i = 0; i < s.size(); i++)
         if (isupper(s[i])) upper=true;
