@@ -5,6 +5,8 @@ string s;
 int main() {
     ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
+	freopen("CAESARCIPHER.INP", "r", stdin);
+	freopen("CAESARCIPHER.OUT", "w", stdout);
     cin >> n >> s >> k;
     for (long long i = 0; i < s.size(); i++)
         if (isupper(s[i])){
