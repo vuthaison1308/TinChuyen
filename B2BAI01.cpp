@@ -8,7 +8,7 @@ int main(){
     freopen("B2BAI01.OUT", "w", stdout);
     cin >> n >> k;
     for (n; n > 0; n--){
-        ans*=n%k;
+        ans=(ans*n%k)%k;
     }
-    cout << ans%k;
+    cout << ans;
 }
