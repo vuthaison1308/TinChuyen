@@ -1,14 +1,14 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
+#define ll long long
 using namespace std;
-long long n, k, ans=0;
-int main(){
+ll n,kq,k;
+int main()
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
-    freopen("B2BAI1.INP", "r", stdin);
-    freopen("B2BAI1.OUT", "w", stdout);
-    cin >> n >> k;
-    for (long long i = 1; i <= n; i++){
-        ans+=(i*i)%k;
-    }
-    cout << ans%k;
+    cin.tie(0);cout.tie(0);
+    freopen("B2BAI1.inp","r",stdin);
+    freopen("B2BAI1.out","w",stdout);
+    cin>>n >> k;
+    kq=(n%(6*k))*((n+1)%(6*k))*((2*n+1)%(6*k))%(6*k)/6;
+    cout<<kq%k;
 }
